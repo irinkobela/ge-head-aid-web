@@ -9,40 +9,28 @@ const AboutPage = () => {
 
   const leadership = [
     {
-      name: language === 'ka' ? 'პროფ. ნანა გორგაძე' : 'Prof. Nana Gorgadze',
-      title: language === 'ka' ? 'დამფუძნებელი და თავმჯდომარე' : 'Founder and Chairperson',
-      specialization: language === 'ka' ? 'ნევროლოგია' : 'Neurology',
-      experience: language === 'ka' ? '20 წელი' : '20 years',
+      name: language === 'ka' ? 'ირინე ბახუტაშვილი' : 'Irine Bakhutashvili',
+      title: language === 'ka' ? 'თანადამფუძნებელი' : 'Co-Founder',
+      specialization: language === 'ka' ? 'სამედიცინო მეცნიერებები' : 'Medical Sciences',
+      experience: language === 'ka' ? '10+ წელი' : '10+ years',
       education: language === 'ka' 
-        ? 'თბილისის სამედიცინო უნივერსიტეტი, ჰარვარდის სამედიცინო სკოლა'
-        : 'Tbilisi Medical University, Harvard Medical School',
+        ? 'თბილისის სახელმწიფო სამედიცინო უნივერსიტეტი'
+        : 'Tbilisi State Medical University',
       description: language === 'ka'
-        ? 'წამყვანი ექსპერტი მიგრენისა და თავის ტკივილის სფეროში, 150+ სამეცნიერო პუბლიკაციის ავტორი'
-        : 'Leading expert in migraine and headache disorders, author of 150+ scientific publications'
+        ? 'ორგანიზაციის თანადამფუძნებელი და წამყვანი სპეციალისტი მიგრენისა და თავის ტკივილის სფეროში. პასუხისმგებელია კვლევითი პროექტების კოორდინაციაზე და პაციენტთა მხარდაჭერის პროგრამებზე.'
+        : 'Co-founder of the organization and leading specialist in migraine and headache disorders. Responsible for coordinating research projects and patient support programs.'
     },
     {
-      name: language === 'ka' ? 'დოქ. მიხეილ ხაჩიძე' : 'Dr. Mikheil Khachidze',
-      title: language === 'ka' ? 'აღმასრულებელი დირექტორი' : 'Executive Director',
-      specialization: language === 'ka' ? 'ეპიდემიოლოგია' : 'Epidemiology',
-      experience: language === 'ka' ? '15 წელი' : '15 years',
+      name: language === 'ka' ? 'ქეთევან პაპოშვილი' : 'Ketevan Paposhvili',
+      title: language === 'ka' ? 'თანადამფუძნებელი და ნევროლოგი' : 'Co-Founder & Neurologist',
+      specialization: language === 'ka' ? 'ნევროლოგია' : 'Neurology',
+      experience: language === 'ka' ? '12+ წელი' : '12+ years',
       education: language === 'ka'
-        ? 'თბილისის სამედიცინო უნივერსიტეტი, ლონდონის ჰიგიენისა და ტროპიკული მედიცინის სკოლა'
-        : 'Tbilisi Medical University, London School of Hygiene & Tropical Medicine',
+        ? 'თბილისის სახელმწიფო სამედიცინო უნივერსიტეტი'
+        : 'Tbilisi State Medical University',
       description: language === 'ka'
-        ? 'სპეციალისტი საზოგადოებრივ ჯანმრთელობაში, მიგრენის ეპიდემიოლოგიური კვლევების ხელმძღვანელი'
-        : 'Public health specialist, leading epidemiological research on migraine'
-    },
-    {
-      name: language === 'ka' ? 'დოქ. სალომე ლომიძე' : 'Dr. Salome Lomidze',
-      title: language === 'ka' ? 'სამეცნიერო დირექტორი' : 'Scientific Director',
-      specialization: language === 'ka' ? 'კლინიკური ფსიქოლოგია' : 'Clinical Psychology',
-      experience: language === 'ka' ? '12 წელი' : '12 years',
-      education: language === 'ka'
-        ? 'თბილისის სამედიცინო უნივერსიტეტი, ვიენის უნივერსიტეტი'
-        : 'Tbilisi Medical University, University of Vienna',
-      description: language === 'ka'
-        ? 'ექსპერტი მიგრენის ფსიქოსოციალურ ასპექტებში, პაციენტთა მხარდაჭერის პროგრამების ხელმძღვანელი'
-        : 'Expert in psychosocial aspects of migraine, leading patient support programs'
+        ? 'ორგანიზაციის თანადამფუძნებელი და პრაქტიკოსი ნევროლოგი, რომელსაც აქვს ღრმა გამოცდილება მიგრენისა და სხვა ნევროლოგიური რასტროვებების მკურნალობაში. ხელმძღვანელობს კლინიკურ კვლევებსა და პაციენტთა მოვლის სტანდარტების შემუშავებას.'
+        : 'Co-founder of the organization and practicing neurologist with extensive experience in treating migraine and other neurological disorders. Leads clinical research and development of patient care standards.'
     }
   ];
 
