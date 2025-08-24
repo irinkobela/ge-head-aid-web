@@ -13,7 +13,7 @@ const HomePage = () => {
     {
       title: language === 'ka' ? 'განათლება' : 'Education',
       description: language === 'ka' 
-        ? 'ისწავლე მიგრენისა და თავის ტკივილის შესახებ'
+        ? 'ისწავლე შაკიკისა და თავის ტკივილის შესახებ'
         : 'Learn about migraines and headache disorders',
       icon: BookOpen,
       link: '/education',
@@ -42,20 +42,20 @@ const HomePage = () => {
   const newsItems = [
     {
       title: language === 'ka' 
-        ? 'ახალი კვლევა მიგრენის მკურნალობის შესახებ'
+        ? 'ახალი კვლევა შაკიკის მკურნალობის შესახებ'
         : 'New Research on Migraine Treatment',
       excerpt: language === 'ka'
-        ? 'თბილისის სამედიცინო უნივერსიტეტმა წარმოადგინა ახალი მიდგომა მიგრენის მკურნალობისთვის...'
+        ? 'თბილისის სამედიცინო უნივერსიტეტმა წარმოადგინა ახალი მიდგომა შაკიკის მკურნალობისთვის...'
         : 'Tbilisi Medical University presents a new approach to migraine treatment...',
       date: '2024-01-15',
       category: language === 'ka' ? 'კვლევა' : 'Research'
     },
     {
       title: language === 'ka'
-        ? 'მიგრენის საერთაშორისო დღე 2024'
+        ? 'შაკიკის საერთაშორისო დღე 2024'
         : 'International Migraine Day 2024',
       excerpt: language === 'ka'
-        ? 'გვაქვს სიამოვნება გავუწყოთ მიგრენის საერთაშორისო დღის ღონისძიებები...'
+        ? 'გვაქვს სიამოვნება გავუწყოთ შაკიკის საერთაშორისო დღის ღონისძიებები...'
         : 'We are pleased to announce International Migraine Day events...',
       date: '2024-01-10',
       category: language === 'ka' ? 'ღონისძიება' : 'Event'
@@ -65,7 +65,7 @@ const HomePage = () => {
         ? 'პაციენტთა ახალი მხარდაჭერის პროგრამა'
         : 'New Patient Support Program',
       excerpt: language === 'ka'
-        ? 'ახალი პროგრამა უზრუნველყოფს უფასო კონსულტაციებს მიგრენით მოვლილთათვის...'
+        ? 'ახალი პროგრამა უზრუნველყოფს უფასო კონსულტაციებს შაკიკით მოვლილთათვის...'
         : 'New program provides free consultations for migraine sufferers...',
       date: '2024-01-05',
       category: language === 'ka' ? 'მხარდაჭერა' : 'Support'

@@ -14,13 +14,13 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <h3 className="text-xl font-bold mb-4 font-georgian">
               {language === 'ka' 
-                ? 'საქართველოს თავის ტკივილისა და მიგრენის ორგანიზაცია'
+                ? 'საქართველოს თავის ტკივილისა და შაკიკის ორგანიზაცია'
                 : 'Georgian Headache and Migraine Organization'
               }
             </h3>
             <p className="text-primary-foreground/80 mb-4 font-georgian">
               {language === 'ka'
-                ? 'ვეძღვნებით თავის ტკივილითა და მიგრენით დაზარალებულთა ცხოვრების გაუმჯობესებას კვლევის, განათლებისა და მხარდაჭერის მეშვეობით.'
+                ? 'ვეძღვნებით თავის ტკივილითა და შაკიკით დაზარალებულთა ცხოვრების გაუმჯობესებას კვლევის, განათლებისა და მხარდაჭერის მეშვეობით.'
                 : 'Dedicated to improving the lives of those affected by headaches and migraines through research, education, and support.'
               }
             </p>
@@ -93,7 +93,7 @@ const Footer = () => {
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center">
           <p className="text-primary-foreground/60 font-georgian">
             © 2024 {language === 'ka' 
-              ? 'საქართველოს თავის ტკივილისა და მიგრენის ორგანიზაცია. ყველა უფლება დაცულია.'
+              ? 'საქართველოს თავის ტკივილისა და შაკიკის ორგანიზაცია. ყველა უფლება დაცულია.'
               : 'Georgian Headache and Migraine Organization. All rights reserved.'
             }
           </p>

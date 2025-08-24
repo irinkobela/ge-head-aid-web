@@ -17,7 +17,7 @@ const AboutPage = () => {
         ? 'თბილისის სახელმწიფო სამედიცინო უნივერსიტეტი'
         : 'Tbilisi State Medical University',
       description: language === 'ka'
-        ? 'ორგანიზაციის თანადამფუძნებელი და წამყვანი სპეციალისტი მიგრენისა და თავის ტკივილის სფეროში. პასუხისმგებელია კვლევითი პროექტების კოორდინაციაზე და პაციენტთა მხარდაჭერის პროგრამებზე.'
+        ? 'ორგანიზაციის თანადამფუძნებელი და წამყვანი სპეციალისტი შაკიკისა და თავის ტკივილის სფეროში. პასუხისმგებელია კვლევითი პროექტების კოორდინაციაზე და პაციენტთა მხარდაჭერის პროგრამებზე.'
         : 'Co-founder of the organization and leading specialist in migraine and headache disorders. Responsible for coordinating research projects and patient support programs.'
     },
     {
@@ -29,7 +29,7 @@ const AboutPage = () => {
         ? 'თბილისის სახელმწიფო სამედიცინო უნივერსიტეტი'
         : 'Tbilisi State Medical University',
       description: language === 'ka'
-        ? 'ორგანიზაციის თანადამფუძნებელი და პრაქტიკოსი ნევროლოგი, რომელსაც აქვს ღრმა გამოცდილება მიგრენისა და სხვა ნევროლოგიური რასტროვებების მკურნალობაში. ხელმძღვანელობს კლინიკურ კვლევებსა და პაციენტთა მოვლის სტანდარტების შემუშავებას.'
+        ? 'ორგანიზაციის თანადამფუძნებელი და პრაქტიკოსი ნევროლოგი, რომელსაც აქვს ღრმა გამოცდილება შაკიკისა და სხვა ნევროლოგიური რასტროვებების მკურნალობაში. ხელმძღვანელობს კლინიკურ კვლევებსა და პაციენტთა მოვლის სტანდარტების შემუშავებას.'
         : 'Co-founder of the organization and practicing neurologist with extensive experience in treating migraine and other neurological disorders. Leads clinical research and development of patient care standards.'
     }
   ];
@@ -43,7 +43,7 @@ const AboutPage = () => {
         : 'Collaboration in scientific research and education'
     },
     {
-      name: language === 'ka' ? 'საერთაშორისო მიგრენის ორგანიზაცია' : 'International Migraine Foundation',
+      name: language === 'ka' ? 'საერთაშორისო შაკიკის ორგანიზაცია' : 'International Migraine Foundation',
       type: language === 'ka' ? 'საერთაშორისო პარტნიორი' : 'International Partner',
       description: language === 'ka'
         ? 'გლობალური ინიციატივებისა და სტანდარტების დანერგვა'
@@ -70,21 +70,21 @@ const AboutPage = () => {
       year: '2010',
       title: language === 'ka' ? 'ორგანიზაციის დაფუძნება' : 'Organization Founded',
       description: language === 'ka'
-        ? 'საქართველოს მიგრენისა და თავის ტკივილის ორგანიზაციის დაფუძნება'
+        ? 'საქართველოს შაკიკისა და თავის ტკივილის ორგანიზაციის დაფუძნება'
         : 'Georgian Headache and Migraine Organization established'
     },
     {
       year: '2012',
       title: language === 'ka' ? 'პირველი კლინიკური კვლევა' : 'First Clinical Study',
       description: language === 'ka'
-        ? 'მიგრენის გავრცელების შესახებ პირველი ეროვნული კვლევის დაწყება'
+        ? 'შაკიკის გავრცელების შესახებ პირველი ეროვნული კვლევის დაწყება'
         : 'Launch of first national study on migraine prevalence'
     },
     {
       year: '2015',
       title: language === 'ka' ? 'საერთაშორისო ღიაობა' : 'International Recognition',
       description: language === 'ka'
-        ? 'საერთაშორისო მიგრენის ორგანიზაციაში გაწევრიანება'
+        ? 'საერთაშორისო შაკიკის ორგანიზაციაში გაწევრიანება'
         : 'Membership in International Migraine Foundation'
     },
     {
@@ -139,7 +139,7 @@ const AboutPage = () => {
                 </h2>
                 <p className="text-lg leading-relaxed text-muted-foreground font-georgian">
                   {language === 'ka'
-                    ? 'ჩვენი მისია არის თავის ტკივილისა და მიგრენის დაავადებების გაგება-გააზრების, მკურნალობისა და პრევენციის განვითარება, პაციენტებისა და მათი ოჯახების ყოვლისმომცველი მხარდაჭერის უზრუნველყოფასთან ერთად. ჩვენ ვიბრძვით იმისთვის, რომ ყველა ადამიანს, ვისაც აქვს მიგრენა, ჰქონდეს წვდომა ხარისხიან სამედიცინო მომსახურებასა და საჭირო ინფორმაციაზე.'
+                    ? 'ჩვენი მისია არის თავის ტკივილისა და შაკიკის დაავადებების გაგება-გააზრების, მკურნალობისა და პრევენციის განვითარება, პაციენტებისა და მათი ოჯახების ყოვლისმომცველი მხარდაჭერის უზრუნველყოფასთან ერთად. ჩვენ ვიბრძვით იმისთვის, რომ ყველა ადამიანს, ვისაც აქვს შაკიკი, ჰქონდეს წვდომა ხარისხიან სამედიცინო მომსახურებასა და საჭირო ინფორმაციაზე.'
                     : 'Our mission is to advance understanding, treatment, and prevention of headache disorders while providing comprehensive support to patients and their families. We strive to ensure that every person with migraine has access to quality medical care and necessary information.'
                   }
                 </p>

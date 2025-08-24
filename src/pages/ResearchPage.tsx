@@ -11,7 +11,7 @@ const ResearchPage = () => {
   const studies = [
     {
       title: language === 'ka' 
-        ? 'მიგრენის გავრცელება საქართველოში'
+        ? 'შაკიკის გავრცელება საქართველოში'
         : 'Migraine Prevalence in Georgia',
       authors: language === 'ka' 
         ? 'ნ. გორგაძე, მ. ხაჩიძე, ს. ლომიძე'
@@ -21,14 +21,14 @@ const ResearchPage = () => {
         : 'Georgian Medical Journal',
       year: '2024',
       summary: language === 'ka'
-        ? 'ამ კვლევამ გამოავლინა მიგრენის 12.5% გავრცელება საქართველოს მოსახლეობაში...'
+        ? 'ამ კვლევამ გამოავლინა შაკიკის 12.5% გავრცელება საქართველოს მოსახლეობაში...'
         : 'This study revealed a 12.5% prevalence of migraine in the Georgian population...',
       status: 'published',
       category: 'epidemiology'
     },
     {
       title: language === 'ka'
-        ? 'ტრადიციული ქართული მედიცინა მიგრენის მკურნალობაში'
+        ? 'ტრადიციული ქართული მედიცინა შაკიკის მკურნალობაში'
         : 'Traditional Georgian Medicine in Migraine Treatment',
       authors: language === 'ka'
         ? 'თ. კვარაცხელია, ლ. ნაცვლიშვილი'
@@ -38,14 +38,14 @@ const ResearchPage = () => {
         : 'Journal of Integrative Medicine',
       year: '2023',
       summary: language === 'ka'
-        ? 'კვლევა აფასებს ქართული ყალიბისეული მედიცინის ეფექტურობას მიგრენის მკურნალობაში...'
+        ? 'კვლევა აფასებს ქართული ყალიბისეული მედიცინის ეფექტურობას შაკიკის მკურნალობაში...'
         : 'Study evaluates the effectiveness of Georgian traditional medicine in migraine treatment...',
       status: 'published',
       category: 'treatment'
     },
     {
       title: language === 'ka'
-        ? 'კლიმატის გავლენა მიგრენის ჩანაცვლზე'
+        ? 'კლიმატის გავლენა შაკიკის ჩანაცვლზე'
         : 'Climate Impact on Migraine Episodes',
       authors: language === 'ka'
         ? 'რ. ჯავახიშვილი, ი. წერეთელი'
@@ -55,7 +55,7 @@ const ResearchPage = () => {
         : 'Neurology Research',
       year: '2024',
       summary: language === 'ka'
-        ? 'მიმდინარე კვლევა იკვლევს ამინდის ცვალებადობის გავლენას მიგრენის ჩანაცვლზე...'
+        ? 'მიმდინარე კვლევა იკვლევს ამინდის ცვალებადობის გავლენას შაკიკის ჩანაცვლზე...'
         : 'Ongoing research investigates weather variability impact on migraine episodes...',
       status: 'ongoing',
       category: 'environmental'
@@ -98,7 +98,7 @@ const ResearchPage = () => {
       description: language === 'ka' ? '18-65 წლის' : 'ages 18-65'
     },
     {
-      metric: language === 'ka' ? 'ქრონიკული მიგრენა' : 'Chronic migraine',
+      metric: language === 'ka' ? 'ქრონიკული შაკიკი' : 'Chronic migraine',
       value: '2.1%',
       description: language === 'ka' ? 'მოსახლეობაში' : 'in population'
     },
@@ -119,7 +119,7 @@ const ResearchPage = () => {
           </h1>
           <p className="text-xl max-w-3xl mx-auto text-muted-foreground font-georgian">
             {language === 'ka'
-              ? 'წამყვანი კვლევები მიგრენისა და თავის ტკივილის სფეროში'
+              ? 'წამყვანი კვლევები შაკიკისა და თავის ტკივილის სფეროში'
               : 'Leading research in migraine and headache disorders'
             }
           </p>

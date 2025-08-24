@@ -14,7 +14,7 @@ const EducationPage = () => {
       title: t('overview'),
       icon: Book,
       content: language === 'ka' 
-        ? 'მიგრენა არის ნევროლოგიური დაავადება, რომელიც ხასიათდება განმეორებადი, ძლიერი თავის ტკივილით. ეს არის ერთ-ერთი ყველაზე გავრცელებული და შეზღუდვის შექმნელი მდგომარეობა მსოფლიოში.'
+        ? 'შაკიკი არის ნევროლოგიური დაავადება, რომელიც ხასიათდება განმეორებადი, ძლიერი თავის ტკივილით. ეს არის ერთ-ერთი ყველაზე გავრცელებული და შეზღუდვის შექმნელი მდგომარეობა მსოფლიოში.'
         : 'Migraine is a neurological disorder characterized by recurrent, severe headaches. It is one of the most common and disabling conditions worldwide.'
     },
     {
@@ -22,7 +22,7 @@ const EducationPage = () => {
       title: t('symptoms'),
       icon: Activity,
       content: language === 'ka'
-        ? 'მიგრენის ძირითადი სიმპტომები მოიცავს: ძლიერ თავის ტკივილს, გულისრევას, ღებინებას, სინათლისა და ხმაურის მიმართ მგრძნობელობას, ვიზუალურ დარღვევებს.'
+        ? 'შაკიკის ძირითადი სიმპტომები მოიცავს: ძლიერ თავის ტკივილს, გულისრევას, ღებინებას, სინათლისა და ხმაურის მიმართ მგრძნობელობას, ვიზუალურ დარღვევებს.'
         : 'Main migraine symptoms include: severe headache, nausea, vomiting, sensitivity to light and sound, visual disturbances.'
     },
     {
@@ -30,7 +30,7 @@ const EducationPage = () => {
       title: t('treatments'),
       icon: Shield,
       content: language === 'ka'
-        ? 'მიგრენის მკურნალობა მოიცავს მედიკამენტებს, ცხოვრების წესის ცვლილებებს, სტრესის მართვას და ალტერნატიულ თერაპიებს. მნიშვნელოვანია ინდივიდუალური მიდგომა.'
+        ? 'შაკიკის მკურნალობა მოიცავს მედიკამენტებს, ცხოვრების წესის ცვლილებებს, სტრესის მართვას და ალტერნატიულ თერაპიებს. მნიშვნელოვანია ინდივიდუალური მიდგომა.'
         : 'Migraine treatment includes medications, lifestyle changes, stress management, and alternative therapies. Individual approach is crucial.'
     },
     {
@@ -54,16 +54,16 @@ const EducationPage = () => {
       title: t('glossary'),
       icon: HelpCircle,
       content: language === 'ka'
-        ? 'სამედიცინო ტერმინების განმარტება: აურა, ტრიგერი, ქრონიკული მიგრენა, კლასტერული თავის ტკივილი, ტენზიური თავის ტკივილი.'
+        ? 'სამედიცინო ტერმინების განმარტება: აურა, ტრიგერი, ქრონიკული შაკიკი, კლასტერული თავის ტკივილი, ტენზიური თავის ტკივილი.'
         : 'Medical terms explained: Aura, Trigger, Chronic migraine, Cluster headache, Tension headache.'
     }
   ];
 
   const resources = [
     {
-      title: language === 'ka' ? 'მიგრენის სახელმძღვანელო' : 'Migraine Guide',
+      title: language === 'ka' ? 'შაკიკის სახელმძღვანელო' : 'Migraine Guide',
       description: language === 'ka' 
-        ? 'სრული სახელმძღვანელო მიგრენის გაგებისა და მართვისთვის'
+        ? 'სრული სახელმძღვანელო შაკიკის გაგებისა და მართვისთვის'
         : 'Complete guide for understanding and managing migraines',
       type: 'PDF',
       pages: 45
@@ -71,7 +71,7 @@ const EducationPage = () => {
     {
       title: language === 'ka' ? 'ტრიგერების იდენტიფიცირება' : 'Identifying Triggers',
       description: language === 'ka'
-        ? 'როგორ ავიცნობთ და ავიცილოთ მიგრენის ტრიგერები'
+        ? 'როგორ ავიცნობთ და ავიცილოთ შაკიკის ტრიგერები'
         : 'How to identify and avoid migraine triggers',
       type: 'PDF',
       pages: 20
@@ -96,7 +96,7 @@ const EducationPage = () => {
           </h1>
           <p className="text-xl max-w-3xl mx-auto text-muted-foreground font-georgian">
             {language === 'ka'
-              ? 'ყოვლისმომცველი განათლება მიგრენისა და თავის ტკივილის შესახებ'
+              ? 'ყოვლისმომცველი განათლება შაკიკისა და თავის ტკივილის შესახებ'
               : 'Comprehensive education about migraines and headache disorders'
             }
           </p>

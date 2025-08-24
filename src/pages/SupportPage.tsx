@@ -11,18 +11,18 @@ const SupportPage = () => {
   const faqs = [
     {
       question: language === 'ka' 
-        ? 'რა არის მიგრენა და როგორ განვასხვავოთ ჩვეულებრივი თავის ტკივილისგან?'
+        ? 'რა არის შაკიკი და როგორ განვასხვავოთ ჩვეულებრივი თავის ტკივილისგან?'
         : 'What is migraine and how is it different from regular headaches?',
       answer: language === 'ka'
-        ? 'მიგრენა არის ნევროლოგიური დაავადება, რომელიც ხასიათდება ძლიერი, ძვრელი თავის ტკივილით, რომელსაც ხშირად თან ახლავს გულისრევა, ღებინება და სინათლისა თუ ხმაურის მიმართ მგრძნობელობა. ჩვეულებრივი თავის ტკივილისგან განსხვავებით, მიგრენა შეიძლება გაგრძელდეს 4-დან 72 საათამდე.'
+        ? 'შაკიკი არის ნევროლოგიური დაავადება, რომელიც ხასიათდება ძლიერი, ძვრელი თავის ტკივილით, რომელსაც ხშირად თან ახლავს გულისრევა, ღებინება და სინათლისა თუ ხმაურის მიმართ მგრძნობელობა. ჩვეულებრივი თავის ტკივილისგან განსხვავებით, შაკიკი შეიძლება გაგრძელდეს 4-დან 72 საათამდე.'
         : 'Migraine is a neurological disorder characterized by severe, throbbing headache often accompanied by nausea, vomiting, and sensitivity to light and sound. Unlike regular headaches, migraines can last from 4 to 72 hours.'
     },
     {
       question: language === 'ka'
-        ? 'რა ტრიგერები იწვევს მიგრენას?'
+        ? 'რა ტრიგერები იწვევს შაკიკს?'
         : 'What triggers cause migraines?',
       answer: language === 'ka'
-        ? 'მიგრენის ყველაზე გავრცელებული ტრიგერებია: სტრესი, ჰორმონალური ცვლილებები, გარკვეული საკვები პროდუქტები, ალკოჰოლი, ძილის დარღვევა, ამინდის ცვლილება, ძლიერი სუნები და სინათლე.'
+        ? 'შაკიკის ყველაზე გავრცელებული ტრიგერებია: სტრესი, ჰორმონალური ცვლილებები, გარკვეული საკვები პროდუქტები, ალკოჰოლი, ძილის დარღვევა, ამინდის ცვლილება, ძლიერი სუნები და სინათლე.'
         : 'Common migraine triggers include: stress, hormonal changes, certain foods, alcohol, sleep disruption, weather changes, strong odors, and bright lights.'
     },
     {
@@ -35,10 +35,10 @@ const SupportPage = () => {
     },
     {
       question: language === 'ka'
-        ? 'შეიძლება თუ არა მიგრენის თავიდან აცილება?'
+        ? 'შეიძლება თუ არა შაკიკის თავიდან აცილება?'
         : 'Can migraines be prevented?',
       answer: language === 'ka'
-        ? 'კი, მიგრენის პრევენცია შესაძლებელია რეგულარული ძილის რეჟიმით, სტრესის მართვით, ტრიგერების თავიდან აცილებით, ჯანსაღი კვებით და რეგულარული ვარჯიშით.'
+        ? 'კი, შაკიკის პრევენცია შესაძლებელია რეგულარული ძილის რეჟიმით, სტრესის მართვით, ტრიგერების თავიდან აცილებით, ჯანსაღი კვებით და რეგულარული ვარჯიშით.'
         : 'Yes, migraine prevention is possible through regular sleep schedule, stress management, avoiding triggers, healthy diet, and regular exercise.'
     }
   ];
@@ -47,7 +47,7 @@ const SupportPage = () => {
     {
       title: language === 'ka' ? 'პაციენტის სახელმძღვანელო' : 'Patient Guide',
       description: language === 'ka' 
-        ? 'ყოვლისმომცველი სახელმძღვანელო მიგრენის მქონე პაციენტებისთვის'
+        ? 'ყოვლისმომცველი სახელმძღვანელო შაკიკის მქონე პაციენტებისთვის'
         : 'Comprehensive guide for patients with migraine',
       pages: 32,
       category: language === 'ka' ? 'ზოგადი' : 'General'
@@ -55,15 +55,15 @@ const SupportPage = () => {
     {
       title: language === 'ka' ? 'მომვლელის სახელმძღვანელო' : 'Caregiver Guide',
       description: language === 'ka'
-        ? 'რჩევები მიგრენის მქონე ოჯახის წევრის მოვლისთვის'
+        ? 'რჩევები შაკიკის მქონე ოჯახის წევრის მოვლისთვის'
         : 'Tips for caring for a family member with migraine',
       pages: 24,
       category: language === 'ka' ? 'მომვლელი' : 'Caregiver'
     },
     {
-      title: language === 'ka' ? 'სამუშაო ადგილზე მიგრენა' : 'Migraine at Work',
+      title: language === 'ka' ? 'სამუშაო ადგილზე შაკიკი' : 'Migraine at Work',
       description: language === 'ka'
-        ? 'როგორ მოვუმკლავდეთ მიგრენას სამუშაო გარემოში'
+        ? 'როგორ მოვუმკლავდეთ შაკიკს სამუშაო გარემოში'
         : 'How to manage migraine in the workplace',
       pages: 16,
       category: language === 'ka' ? 'სამუშაო' : 'Workplace'
@@ -110,7 +110,7 @@ const SupportPage = () => {
         'შეზღუდეთ ალკოჰოლი და კოფეინი',
         'იყენეთ მედიტაცია',
         'შექმენით მშვიდი გარემო სახლში',
-        'წარმატებული ჩაწერეთ მიგრენის დღიური'
+        'წარმატებული ჩაწერეთ შაკიკის დღიური'
       ] : [
         'Drink plenty of water',
         'Limit alcohol and caffeine',
@@ -223,11 +223,11 @@ const SupportPage = () => {
                 <Calendar className="h-8 w-8 text-white" />
               </div>
               <CardTitle className="font-georgian">
-                {language === 'ka' ? 'მიგრენის დღიური' : 'Migraine Diary'}
+                {language === 'ka' ? 'შაკიკის დღიური' : 'Migraine Diary'}
               </CardTitle>
               <CardDescription className="font-georgian">
                 {language === 'ka'
-                  ? 'ყოველდღიური აღრიცხვა თქვენი მიგრენის ეპიზოდების, ტრიგერებისა და მკურნალობის ეფექტურობის შესახებ'
+                  ? 'ყოველდღიური აღრიცხვა თქვენი შაკიკის ეპიზოდების, ტრიგერებისა და მკურნალობის ეფექტურობის შესახებ'
                   : 'Daily tracking of your migraine episodes, triggers, and treatment effectiveness'
                 }
               </CardDescription>
@@ -245,7 +245,7 @@ const SupportPage = () => {
               </div>
               <p className="text-sm text-muted-foreground font-georgian">
                 {language === 'ka'
-                  ? 'დღიურის წარმატებული წარმოება დაგეხმარებათ ექიმთან ერთად უკეთ წავიდეთ თქვენი მიგრენის მართვის გეგმა'
+                  ? 'დღიურის წარმატებული წარმოება დაგეხმარებათ ექიმთან ერთად უკეთ წავიდეთ თქვენი შაკიკის მართვის გეგმა'
                   : 'Successful diary keeping will help you and your doctor develop a better migraine management plan'
                 }
               </p>

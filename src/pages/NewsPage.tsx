@@ -12,10 +12,10 @@ const NewsPage = () => {
   const articles = [
     {
       title: language === 'ka' 
-        ? 'ახალი კვლევა აღმოაჩენს მიგრენის ხრონიციზაციის მიზეზებს'
+        ? 'ახალი კვლევა აღმოაჩენს შაკიკის ხრონიციზაციის მიზეზებს'
         : 'New Study Reveals Causes of Migraine Chronification',
       excerpt: language === 'ka'
-        ? 'თბილისის სამედიცინო უნივერსიტეტის მკვლევარებმა აღმოაჩინეს ახალი ფაქტორები, რომლებიც გავლენას ახდენს მიგრენის ქრონიკულ ფორმაში გადასვლაზე...'
+        ? 'თბილისის სამედიცინო უნივერსიტეტის მკვლევარებმა აღმოაჩინეს ახალი ფაქტორები, რომლებიც გავლენას ახდენს შაკიკის ქრონიკულ ფორმაში გადასვლაზე...'
         : 'Researchers at Tbilisi Medical University discovered new factors influencing the transition of migraine to chronic form...',
       date: '2024-01-20',
       category: language === 'ka' ? 'კვლევა' : 'Research',
@@ -24,10 +24,10 @@ const NewsPage = () => {
     },
     {
       title: language === 'ka'
-        ? 'მიგრენის საერთაშორისო დღე: ღონისძიებები და ინიციატივები'
+        ? 'შაკიკის საერთაშორისო დღე: ღონისძიებები და ინიციატივები'
         : 'International Migraine Day: Events and Initiatives',
       excerpt: language === 'ka'
-        ? 'წელს მიგრენის საერთაშორისო დღე აღინიშნება სპეციალური ღონისძიებებით ქუთაისში, თბილისსა და ბათუმში...'
+        ? 'წელს შაკიკის საერთაშორისო დღე აღინიშნება სპეციალური ღონისძიებებით ქუთაისში, თბილისსა და ბათუმში...'
         : 'This year International Migraine Day will be marked with special events in Kutaisi, Tbilisi, and Batumi...',
       date: '2024-01-18',
       category: language === 'ka' ? 'ღონისძიება' : 'Event',
@@ -50,7 +50,7 @@ const NewsPage = () => {
 
   const events = [
     {
-      title: language === 'ka' ? 'მიგრენის ფორუმი 2024' : 'Migraine Forum 2024',
+      title: language === 'ka' ? 'შაკიკის ფორუმი 2024' : 'Migraine Forum 2024',
       date: '2024-03-15',
       time: '10:00',
       location: language === 'ka' ? 'თბილისი, ჰოტელ რადისონი' : 'Tbilisi, Radisson Hotel',
@@ -75,7 +75,7 @@ const NewsPage = () => {
       time: '18:00',
       location: language === 'ka' ? 'ონლაინ' : 'Online',
       description: language === 'ka'
-        ? 'მიგრენის თანამედროვე მკურნალობის მეთოდები'
+        ? 'შაკიკის თანამედროვე მკურნალობის მეთოდები'
         : 'Modern migraine treatment methods',
       type: 'webinar'
     }
@@ -83,20 +83,20 @@ const NewsPage = () => {
 
   const mediaItems = [
     {
-      title: language === 'ka' ? 'მიგრენის დღიური - როგორ წარმოვებ' : 'Migraine Diary - How to Keep',
+      title: language === 'ka' ? 'შაკიკის დღიური - როგორ წარმოვებ' : 'Migraine Diary - How to Keep',
       type: 'video',
       duration: '12:45',
       views: '2.3K',
       description: language === 'ka' 
-        ? 'ვიდეო სახელმძღვანელო მიგრენის დღიურის სწორად წარმოებისთვის'
+        ? 'ვიდეო სახელმძღვანელო შაკიკის დღიურის სწორად წარმოებისთვის'
         : 'Video guide for properly keeping a migraine diary'
     },
     {
-      title: language === 'ka' ? 'მიგრენის ფორუმი 2023 - ფოტოები' : 'Migraine Forum 2023 - Photos',
+      title: language === 'ka' ? 'შაკიკის ფორუმი 2023 - ფოტოები' : 'Migraine Forum 2023 - Photos',
       type: 'gallery',
       count: 45,
       description: language === 'ka'
-        ? 'ფოტო გალერეა გასული წლის მიგრენის ფორუმიდან'
+        ? 'ფოტო გალერეა გასული წლის შაკიკის ფორუმიდან'
         : 'Photo gallery from last year\'s migraine forum'
     },
     {
@@ -105,7 +105,7 @@ const NewsPage = () => {
       duration: '8:30',
       views: '1.8K',
       description: language === 'ka'
-        ? 'ინტერვიუ მიგრენით მოვლილ პაციენტთან'
+        ? 'ინტერვიუ შაკიკით მოვლილ პაციენტთან'
         : 'Interview with a migraine patient'
     }
   ];
