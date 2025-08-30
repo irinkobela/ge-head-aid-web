@@ -3,6 +3,7 @@ import { Book, FileText, Lightbulb, Shield, Activity, HelpCircle } from 'lucide-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 const EducationPage = () => {
@@ -49,13 +50,72 @@ const EducationPage = () => {
         ? 'ცხოვრების წესის რჩევები: რეგულარული ვარჯიში, ჰიდრატაცია, დაბალანსებული კვება, ალკოჰოლისა და კოფეინის შეზღუდვა, რელაქსაციის ტექნიკები.'
         : 'Lifestyle tips: regular exercise, hydration, balanced diet, limiting alcohol and caffeine, relaxation techniques.'
     },
+      {
+        id: 'glossary',
+        title: t('glossary'),
+        icon: HelpCircle,
+        content: language === 'ka'
+          ? 'სამედიცინო ტერმინების განმარტება: აურა, ტრიგერი, ქრონიკული შაკიკი, კლასტერული თავის ტკივილი, ტენზიური თავის ტკივილი.'
+          : 'Medical terms explained: Aura, Trigger, Chronic migraine, Cluster headache, Tension headache.'
+      },
+      {
+        id: 'faq',
+        title: language === 'ka' ? 'ხშირად დასმული კითხვები' : 'FAQ',
+        icon: HelpCircle,
+        content: language === 'ka'
+          ? 'ეს სექცია პასუხობს თავის ტკივილთან და შაკიკთან დაკავშირებულ ხშირად დასმულ კითხვებს.'
+          : 'This section provides answers to common questions about headaches and migraines.'
+      }
+  ];
+
+  const faqItems = [
     {
-      id: 'glossary',
-      title: t('glossary'),
-      icon: HelpCircle,
-      content: language === 'ka'
-        ? 'სამედიცინო ტერმინების განმარტება: აურა, ტრიგერი, ქრონიკული შაკიკი, კლასტერული თავის ტკივილი, ტენზიური თავის ტკივილი.'
-        : 'Medical terms explained: Aura, Trigger, Chronic migraine, Cluster headache, Tension headache.'
+      question: language === 'ka' ? 'რა განსხვავებაა თავის ტკივილსა და შაკიკს შორის?' : 'What is the difference between a headache and a migraine?',
+      answer: language === 'ka' 
+        ? 'თავის ტკივილი ზოგადი ტერმინია და თავის არეში ნებისმიერ ტკივილს აღნიშნავს. შაკიკი კი თავის ტკივილის სპეციფიკური ტიპია, რომელიც ხშირად ხასიათდება ძლიერი, მფეთქავი ტკივილით, როგორც წესი, თავის ერთ მხარეს. შაკიკს ხშირად თან ახლავს სხვა სიმპტომებიც, როგორიცაა გულისრევა, ღებინება და სინათლისა და ხმაურის მიმართ მომატებული მგრძნობელობა.'
+        : 'A headache is a general term for pain in the head. A migraine is a specific type of headache, often characterized by a severe, throbbing pain, usually on one side of the head. Migraines are often accompanied by other symptoms like nausea, vomiting, and extreme sensitivity to light and sound.'
+    },
+    {
+      question: language === 'ka' ? 'რა არის შაკიკის გავრცელებული მაპროვოცირებელი ფაქტორები (ტრიგერები)?' : 'What are the common triggers for migraines?',
+      answer: language === 'ka'
+        ? 'ტრიგერები შესაძლოა ინდივიდუალური იყოს, თუმცა გავრცელებულ ფაქტორებს შორისაა: სტრესი და შფოთვა, ჰორმონული ცვლილებები (მაგ., მენსტრუალური ციკლის დროს), გარკვეული საკვები და სასმელი (მაგ., დავარგებული ყველი, ალკოჰოლი, კოფეინი), ძილის რეჟიმის ცვლილება, კაშკაშა სინათლე, მაღალი ხმაური ან მძაფრი სუნი, ამინდის ცვლილება.'
+        : 'Triggers can vary greatly from person to person, but common ones include: stress and anxiety, hormonal changes (e.g., during the menstrual cycle), certain foods and drinks (e.g., aged cheese, alcohol, caffeine), changes in sleep patterns, bright lights, loud noises, or strong smells, and weather changes.'
+    },
+    {
+      question: language === 'ka' ? 'როდის უნდა მივმართო ექიმს თავის ტკივილის გამო?' : 'When should I see a doctor for my headaches?',
+      answer: language === 'ka'
+        ? 'ექიმს უნდა მიმართოთ, თუ: თქვენი თავის ტკივილი არის ძლიერი, ხშირი ან დროთა განმავლობაში უარესდება. ის ხელს გიშლით ყოველდღიურ ცხოვრებაში (სამსახური, სწავლა, ოჯახი). ურეცეპტოდ გასაცემი ტკივილგამაყუჩებლები არ არის ეფექტური. განგივითარდათ „მეხისებრი" თავის ტკივილი – უეცარი, უკიდურესად ძლიერი ტკივილი. თავის ტკივილს თან ახლავს სიცხე, კისრის გაშეშება, ცნობიერების დაბინდვა, გულყრა, მხედველობის გაორება, სისუსტე ან დაბუჟება.'
+        : 'You should consult a doctor if: your headaches are severe, frequent, or worsening over time; they interfere with your daily life (work, school, family); over-the-counter pain relievers are not effective; you experience a "thunderclap" headache – a sudden, extremely severe headache; your headache is accompanied by fever, stiff neck, confusion, seizure, double vision, weakness, or numbness.'
+    },
+    {
+      question: language === 'ka' ? 'როგორ ხდება შაკიკის დიაგნოსტირება?' : 'How is migraine diagnosed?',
+      answer: language === 'ka'
+        ? 'შაკიკის დიაგნოზს სვამს ექიმი, როგორც წესი, ნევროლოგი, თქვენი სამედიცინო ისტორიის, სიმპტომების, ფიზიკური და ნევროლოგიური გასინჯვის საფუძველზე. შაკიკის დასადგენი ერთი კონკრეტული ანალიზი არ არსებობს, მაგრამ ექიმმა შესაძლოა დაგინიშნოთ კვლევები, როგორიცაა მაგნიტურ-რეზონანსული (MRI) ან კომპიუტერული ტომოგრაფია (CT), სხვა სამედიცინო პრობლემების გამოსარიცხად.'
+        : 'A doctor, usually a neurologist, diagnoses migraines based on your medical history, symptoms, and a physical and neurological examination. There is no single test for migraine, but your doctor might order tests like an MRI or CT scan to rule out other medical conditions. Keeping a headache diary can be very helpful for diagnosis.'
+    },
+    {
+      question: language === 'ka' ? 'რა სამკურნალო მეთოდები არსებობს შაკიკისთვის?' : 'What are the treatment options for migraine?',
+      answer: language === 'ka'
+        ? 'მკურნალობა, როგორც წესი, ორმხრივია: შეტევის კუპირება - მედიკამენტის მიღება შეტევის დასაწყისშივე მის შესაჩერებლად (მაგ., ტრიპტანები, არასტეროიდული ანთების საწინააღმდეგო საშუალებები). პრევენციული მკურნალობა - მედიკამენტების რეგულარული მიღება შეტევების სიხშირისა და სიმძიმის შესამცირებლად. ასევე, გადამწყვეტი მნიშვნელობა აქვს ცხოვრების წესის შეცვლას.'
+        : 'Treatment is usually two-fold: Acute Treatment - taking medication at the start of a migraine attack to stop it (e.g., triptans, NSAIDs). Preventive Treatment - taking medication regularly to reduce the frequency and severity of attacks. Lifestyle changes, such as managing stress, regular exercise, and identifying and avoiding triggers, are also crucial.'
+    },
+    {
+      question: language === 'ka' ? 'სად შემიძლია ვიპოვო თავის ტკივილის სპეციალისტი საქართველოში?' : 'Where can I find a specialist for headaches in Georgia?',
+      answer: language === 'ka'
+        ? 'გირჩევთ, პირველ რიგში მიმართოთ ოჯახის ექიმს, რომელიც საჭიროების შემთხვევაში ნევროლოგთან გადაგამისამართებთ. თბილისის, ქუთაისისა და ბათუმის დიდ კლინიკებსა და საუნივერსიტეტო ჰოსპიტლებს აქვთ ნევროლოგიური განყოფილებები, სადაც მუშაობენ თავის ტკივილის მკურნალობაში გამოცდილი სპეციალისტები.'
+        : 'We recommend starting with your family doctor, who can refer you to a neurologist if needed. Major clinics and university hospitals in Tbilisi, Kutaisi, and Batumi have neurology departments with specialists experienced in treating headache disorders.'
+    },
+    {
+      question: language === 'ka' ? 'შეიძლება თუ არა ბავშვებს ჰქონდეთ შაკიკი?' : 'Can children have migraines?',
+      answer: language === 'ka'
+        ? 'დიახ, შაკიკი შესაძლოა აღენიშნებოდეთ ბავშვებსა და მოზარდებს. სიმპტომები შეიძლება განსხვავდებოდეს ზრდასრულებისგან და ზოგჯერ ვლინდებოდეს მუცლის ტკივილით, თავბრუსხვევითა და ხანმოკლე თავის ტკივილით. თუ ეჭვი გაქვთ, რომ თქვენს შვილს შაკიკი აქვს, მნიშვნელოვანია პედიატრთან ან ბავშვთა ნევროლოგთან კონსულტაცია.'
+        : 'Yes, migraines can affect children and adolescents. Symptoms might be different than in adults, sometimes presenting as abdominal pain, dizziness, and shorter headache duration. If you suspect your child has migraines, it is important to see a pediatrician or a pediatric neurologist.'
+    },
+    {
+      question: language === 'ka' ? 'როგორ შემიძლია დავეხმარო მეგობარს ან ოჯახის წევრს, რომელსაც შაკიკი აწუხებს?' : 'How can I support a friend or family member with migraine?',
+      answer: language === 'ka'
+        ? 'გაგება და თანაგრძნობა მთავარია. შეტევის დროს დაეხმარეთ, რომ მოთავსდეს წყნარ, ბნელ ოთახში. შესთავაზეთ წყალი და ნებისმიერი მედიკამენტი, რომელიც სჭირდება. მოთმინებით მოეკიდეთ, თუ გეგმების შეცვლა მოუწევს. მათი მდგომარეობის შესახებ ინფორმაციის მიღება მხარდაჭერის საუკეთესო გამოხატულებაა.'
+        : 'Understanding and empathy are key. During an attack, help them get to a quiet, dark room. Offer them water and any medication they need. Be patient if they have to cancel plans. Educating yourself about their condition shows great support.'
     }
   ];
 
@@ -105,7 +165,7 @@ const EducationPage = () => {
         {/* Education Tabs */}
         <div className="mb-16">
           <Tabs defaultValue="overview" className="w-full">
-            <TabsList className="grid w-full grid-cols-2 md:grid-cols-3 lg:grid-cols-6 mb-8">
+            <TabsList className="grid w-full grid-cols-2 md:grid-cols-3 lg:grid-cols-7 mb-8">
               {educationSections.map((section) => (
                 <TabsTrigger 
                   key={section.id} 
@@ -155,6 +215,36 @@ const EducationPage = () => {
                             <li>• {language === 'ka' ? 'სისუსტე' : 'Fatigue'}</li>
                           </ul>
                         </div>
+                      </div>
+                    )}
+
+                    {section.id === 'faq' && (
+                      <div className="mt-6">
+                        <div className="mb-6 p-4 bg-muted/50 rounded-lg">
+                          <p className="text-sm text-muted-foreground font-georgian">
+                            {language === 'ka'
+                              ? 'გთხოვთ, გაითვალისწინოთ, რომ ეს ინფორმაცია მხოლოდ საგანმანათლებლო მიზნებისთვისაა და ვერ ჩაანაცვლებს პროფესიონალურ სამედიცინო კონსულტაციას. დიაგნოსტიკისა და მკურნალობისთვის ყოველთვის მიმართეთ კვალიფიციურ ექიმს.'
+                              : 'Please remember, this information is for educational purposes only and should not replace professional medical advice. Always consult with a qualified healthcare provider for diagnosis and treatment.'
+                            }
+                          </p>
+                        </div>
+                        
+                        <Accordion type="single" collapsible className="space-y-4">
+                          {faqItems.map((item, index) => (
+                            <AccordionItem 
+                              key={index} 
+                              value={`item-${index}`}
+                              className="border border-border rounded-lg px-6 py-2"
+                            >
+                              <AccordionTrigger className="text-left font-georgian font-medium hover:no-underline py-4">
+                                {item.question}
+                              </AccordionTrigger>
+                              <AccordionContent className="font-georgian text-muted-foreground leading-relaxed pb-4">
+                                {item.answer}
+                              </AccordionContent>
+                            </AccordionItem>
+                          ))}
+                        </Accordion>
                       </div>
                     )}
                   </CardContent>
